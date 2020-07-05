@@ -1,0 +1,185 @@
+/*
+cian: 4BBCE1;
+marino: 106483;
+cielo: 97E5F6;
+rojo: AC032F;
+amarillo: 	898E5F;
+*/
+.container{
+	background: #159957;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #155799, #159957);
+	background: linear-gradient(to bottom, #155799, #159957);
+	height: 100vh; /*'vh' representa el alto tamaño total de la pantalla*/
+	/*centrar elementos en la pantalla*/
+	display: flex; /*FLEXBOX*/
+	align-items: center;
+	justify-content: center;
+}
+.content{
+	max-width: 960px;
+	max-height: 500px;
+	height: 80vh;
+	background-color: #fff;
+	/*SOMBRAS: diferenciaHorizontal diferenciaVertical desenfoque ampitud color*/
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.30);
+	border-radius: 1em;
+	position: relative;
+	padding: 1.8em;
+}
+.description{
+	width: 90%;
+	margin: auto;
+	margin-top: 5em;
+}
+.action{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close{
+	height: 40px;
+	width: 40px;
+	border:none;
+	text-decoration: none;
+	color: white;
+	border-radius: 50%;
+	background-color: #106483;
+	display: inline-block;
+	font-weight: 300;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.title{
+	text-transform: uppercase;
+	text-align: center;	
+}
+.subtitle{
+	display: inline-block;
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.fa-heart{
+	color: #AC032F;
+}
+.position{
+	background-color: #106483;
+	color: white;
+	padding: 0.5em;
+	border-radius: 6px;
+	margin-right: 1em;
+	font-size: 1.5em;
+}
+.imagen{
+	float: left;
+	margin-right: 1em;
+	height: 250px;
+	border-radius: 1em;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,0.30);
+}
+.tabulador{
+	text-indent: 60px;
+	border-bottom: solid 2px #106483;
+	display: block;
+}
+.boton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #14cc60;
+  border-radius: 15px;
+}
+.margen{
+	margin-right: 1em;
+	font-size: 20px;
+}
+.block{
+	display: flow-root;
+}
+th{
+	font-family: 'Martel Sans', bold;
+	padding: 1em;
+	text-align: left;
+	/*border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #106483;*/
+	/*Shorthand Properties*/
+	border-bottom: solid 2px #106483;
+	/*PADDING
+	padding: arriba derecha abajo izquierda;
+	padding: arriba/abajo izquierda/derecha;
+	padding: todo; */
+}
+td{
+	font-family: 'Martel Sans', sans-serif;
+	padding: 1em;
+	text-align: left;
+}
+tr:hover{
+	background-color: rgb(81,194,222,0.4);
+}
+button:hover{
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.30);
+}
+html{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+a{
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #106483;
+}
+table{
+	border-spacing: 0;
+	height: 100%
+	width: 100%;
+}
+thead{
+	font-weight: bold;
+}
+p{
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 20px;
+}
+img{
+	max-width: 100%
+}
+
+/* print () espesificaciones cuando la pagina valla a ser imporesa*/
+@media (min-height: 550px){
+	.content{
+		height: 500px;
+	}
+}
+@media (max-width: 600px){
+	.content{
+		padding: 1em;
+	}
+	td {
+		display: block;
+		width: 100%;
+	}
+	/*seleccionar un elemento basado en su posicion cuando esta a lado de una etiqueta de su mismo tipi*/
+	td:nth-of-type(1){
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #106483;
+	}
+	td:nth-of-type(6){
+		border-bottom: solid 2px #106483;
+	}
+	th {
+		display: none;
+	}
+	.block{
+		display: inline;
+	}
+}
